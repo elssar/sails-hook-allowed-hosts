@@ -1,0 +1,47 @@
+{
+  "name": "sails-hook-allowed-hosts",
+  "description": "Sails hook to ensure that only requests made from authorized hosts/IP addresses are allowed",
+  "author": "Akshay Bist <elssar@altrawcode.com>",
+  "license": "MIT",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elssar/sails-hook-allowed-hosts"
+  },
+  "bugs": {
+    "url": "https://github.com/elssar/sails-hook-allowed-hosts/issues"
+  },
+  "homepage": "https://github.com/elssar/sails-hook-allowed-hosts#readme",
+  "keywords": [
+    "sails",
+    "sails hook",
+    "allowed hosts",
+    "allowedHosts",
+    "allowed_hosts",
+    "hosts"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "report-coverage": "scripts/coverage/report-coverage.sh",
+    "pretest": "npm run test-lint",
+    "test": "scripts/test/test.sh",
+    "test-lint": "scripts/test/test-lint.sh"
+  },
+  "dependencies": {
+    "sails-util": "0.11.0"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.6",
+    "expect.js": "0.3.1",
+    "istanbul": "0.4.2",
+    "jscs": "2.9.0",
+    "jshint": "2.9.1",
+    "mocha": "2.4.5",
+    "sails": "0.12.0",
+    "supertest": "1.2.0"
+  },
+  "sails": {
+    "isHook": true,
+    "hookName": "allowedHosts"
+  }
+}
