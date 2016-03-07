@@ -19,7 +19,7 @@ module.exports = function (sails) {
        *
        * @type {Object}
        */
-      deafults: {
+      defaults: {
         __configKey__: {
           allowedHosts: [/.*/],
           skipEnvs: ['test', 'development'],
