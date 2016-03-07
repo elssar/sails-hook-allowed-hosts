@@ -24,4 +24,4 @@ script:
   npm test;
 
 after_success:
-  if [ `node --version` = "v4.3.0" ]; then npm run coverage-report; fi
+  if [ `node --version` = "v4.3.0" ]; then npm run report-coverage; fi
