@@ -8,5 +8,5 @@ node_js:
 script:
   npm test;
 
-after_success:
-  if [ `node --version` = "v4.3.0" ]; then npm run report-coverage; fi
+after_script:
+  if [[ `node --version` =~ ^v4.*$ ]]; then npm run report-coverage; fi
