@@ -25,7 +25,9 @@ module.exports = function (sails) {
           skipEnvs: ['test', 'development'],
           errorResponse: function (res) {
             sails.log.error('sails-hook-allowed-hosts :: Invalid host header');
-            return res.badRequest();
+            return res.json(400, {
+              error: 'invalidHost'
+            });
           }
         }
       },
